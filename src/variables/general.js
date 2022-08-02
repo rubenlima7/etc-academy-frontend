@@ -26,110 +26,110 @@ var d = today.getDate();
 const events = [
   {
     id: 1,
-    title: "Call with Dave",
-    start: new Date(y, m, 1),
+    title: "Final Group Meeting",
+    start: new Date(y, m, 4, 10, 30),
     allDay: true,
-    className: "bg-red",
+    className: "bg-purple",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Final meeting to discuss the last details of the project before delivering.",
   },
 
   {
     id: 2,
-    title: "Lunch meeting",
-    start: new Date(y, m, d - 1, 10, 30),
+    title: "Project Deadline",
+    start: new Date(y, m, 7, 23, 59),
     allDay: true,
-    className: "bg-orange",
+    className: "bg-purple",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Delivery Day! Today is the last day to deliver the project. Ends at: 11:59 PM",
   },
 
   {
     id: 3,
-    title: "All day conference",
-    start: new Date(y, m, d + 7, 12, 0),
+    title: "Holiday",
+    start: new Date(y, m, 15),
     allDay: true,
-    className: "bg-green",
+    className: "bg-pink",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "The August 15th holiday is the feast day of the Assumption of Mary which celebrates the Christian belief that God assumed the Virgin Mary into Heaven following her death.",
   },
 
   {
     id: 4,
-    title: "Meeting with Mary",
-    start: new Date(y, m, d - 2),
-    allDay: true,
-    className: "bg-blue",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
-
-  {
-    id: 5,
-    title: "Winter Hackaton",
-    start: new Date(y, m, d + 1, 19, 0),
-    allDay: true,
-    className: "bg-red",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
-
-  {
-    id: 6,
-    title: "Digital event",
-    start: new Date(y, m, 21),
-    allDay: true,
-    className: "bg-warning",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
-
-  {
-    id: 7,
-    title: "Marketing event",
-    start: new Date(y, m, 21),
+    title: "Deloitte Intership",
+    start: new Date(y, m, 22),
     allDay: true,
     className: "bg-purple",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Today starts the internship at Deloitte! ",
   },
 
-  {
-    id: 8,
-    title: "Dinner with Family",
-    start: new Date(y, m, 19),
-    allDay: true,
-    className: "bg-red",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
+  // {
+  //   id: 5,
+  //   title: "Winter Hackaton",
+  //   start: new Date(y, m, d + 1, 19, 0),
+  //   allDay: true,
+  //   className: "bg-red",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
 
-  {
-    id: 9,
-    title: "Black Friday",
-    start: new Date(y, m, 23),
-    allDay: true,
-    className: "bg-blue",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
+  // {
+  //   id: 6,
+  //   title: "Digital event",
+  //   start: new Date(y, m, 21),
+  //   allDay: true,
+  //   className: "bg-warning",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
 
-  {
-    id: 10,
-    title: "Cyber Week",
-    start: new Date(y, m, 2),
-    allDay: true,
-    className: "bg-yellow",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  },
+  // {
+  //   id: 7,
+  //   title: "Marketing event",
+  //   start: new Date(y, m, 21),
+  //   allDay: true,
+  //   className: "bg-purple",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
+
+  // {
+  //   id: 8,
+  //   title: "Dinner with Family",
+  //   start: new Date(y, m, 19),
+  //   allDay: true,
+  //   className: "bg-red",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
+
+  // {
+  //   id: 9,
+  //   title: "Black Friday",
+  //   start: new Date(y, m, 23),
+  //   allDay: true,
+  //   className: "bg-blue",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
+
+  // {
+  //   id: 10,
+  //   title: "Cyber Week",
+  //   start: new Date(y, m, 2),
+  //   allDay: true,
+  //   className: "bg-yellow",
+  //   description:
+  //     "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  // },
 
   {
     id: 11,
     title: "EVENT TEST",
-    start: new Date(y, m, d + 9),
+    start: new Date(y, m, 9),
     allDay: true,
-    className: "bg-red",
+    className: "bg-purple",
     description:
       "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
   },
@@ -196,6 +196,13 @@ const widgetEvents = [
     className: "bg-yellow",
   },
 ];
+
+
+
+
+
+
+
 
 // ##############################
 // // // data for populating the table in ReactTables view

@@ -59,11 +59,11 @@ function CardsHeader({ name, parentName }) {
                   </BreadcrumbItem>
                 </Breadcrumb>
               </Col>
-              
+
             </Row>
             <Row>
 
-            {/* Lilia - inserção e personalização do cartão, textos e botão */}
+              {/* Lilia - inserção e personalização do cartão, textos e botão */}
 
               <Col md="12" xl="0">
                 <Card className="card-stats">
@@ -77,7 +77,7 @@ function CardsHeader({ name, parentName }) {
                           Get personalized course recommendations for you.
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          
+
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -92,24 +92,39 @@ function CardsHeader({ name, parentName }) {
                       </span>{" "} */}
                       <span className="text-wrap">The course recommendation algorithms employed by most online learning applications rely upon user activity from existing users in order to make high-quality recommendations.</span>
                     </p>
-                      <br></br>
-                  <Button
-                  className="btn-purple"
-                  color="default"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="sm"
-                  >
-                  Get Started
-                </Button>
+                    <br></br>
+                    <Button
+                      className="btn-purple"
+                      color="default"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                      size="sm"
+                    >
+                      Get Started
+                    </Button>
                   </CardBody>
                 </Card>
 
-                  {/* Lilia - Inserção de titulo */}
 
-                <h2>My courses</h2>
-                <Col className="text-right" md="12" xs="5">
-                {/* <Button
+              </Col>
+
+              {/* Lilia - Inserção de titulo */}
+              <Col className="text-left" md="12" xl="0">
+                <Row>
+                  <div className="col">
+                    <CardTitle
+                      tag="h5"
+                      className="h2 font-weight-bold text-white mb-3"
+                    >My Courses
+                    </CardTitle>
+                    <span className="h2 font-weight-bold mb-0">
+
+                    </span>
+                  </div>
+
+
+                  <Col className="text-right">
+                    {/* <Button
                   className="btn-neutral"
                   color="default"
                   href="#pablo"
@@ -120,19 +135,21 @@ function CardsHeader({ name, parentName }) {
                 </Button> */}
 
 
-                {/* Lilia - inserção e edição do botão */}
+                    {/* Lilia - inserção e edição do botão */}
 
-                <Button
-                  className="btn-neutral"
-                  color="default"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  size="sm"
-                >
-                  View All
-                </Button>
+                    <Button
+                      className="btn-neutral"
+                      color="default"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                      size="sm">
+                      View All
+                    </Button>
+                  </Col>
+                </Row>
               </Col>
-              </Col>
+
+
               <Col md="12" xl="4">
 
                 {/* Lilia - Introdução de imagem, barra de progresso, textos e títulos */}
@@ -141,19 +158,19 @@ function CardsHeader({ name, parentName }) {
                   <CardBody>
                     <Row>
                       <div className="col">
-                      <img alt="..."
-                        className="img-fluid rounded"
-                        src={require("assets/img/theme/img-1-1000x600.jpg").default}
-                      />
+                        <img alt="..."
+                          className="img-fluid rounded"
+                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                        />
                         <CardTitle
                           tag="h4"
                           className="text-uppercase text-muted mb-0"><br></br>
                           UX / UI Full Course
                         </CardTitle>
-                        
+
                         <span className="h2 font-weight-bold mb-0"></span>
                       </div>
-                      
+
                       {/* <Col className="col-auto">
                         <div className="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
                           <i className="ni ni-chart-pie-35" />
@@ -168,9 +185,9 @@ function CardsHeader({ name, parentName }) {
                       <span className="text-nowrap">Since last month</span>
                     </p> */}
 
-                      <div>
-                        <br></br>
-                      
+                    <div>
+                      <br></br>
+
                       <Progress
                         className="progress-md my-2"
                         max="100"
@@ -183,25 +200,25 @@ function CardsHeader({ name, parentName }) {
                 </Card>
               </Col>
               <Col md="12" xl="4">
-              
+
                 <Card className="card-stats">
                   <CardBody>
                     <Row>
                       <div className="col">
-                      <img
-                       alt="..."
-                        className="img-fluid rounded"
-                        src={require("assets/img/theme/img-1-1000x600.jpg").default}
-                      />
+                        <img
+                          alt="..."
+                          className="img-fluid rounded"
+                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                        />
                         <CardTitle
                           tag="h4"
                           className="text-uppercase text-muted mb-0"><br></br>
                           Web3 Fundamentals
                         </CardTitle>
-                        
+
                         <span className="h2 font-weight-bold mb-0"></span>
                       </div>
-                      
+
                       {/* <Col className="col-auto">
                         <div className="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
                           <i className="ni ni-chart-pie-35" />
@@ -216,9 +233,9 @@ function CardsHeader({ name, parentName }) {
                       <span className="text-nowrap">Since last month</span>
                     </p> */}
 
-                      <div>
-                        <br></br>
-                      
+                    <div>
+                      <br></br>
+
                       <Progress
                         className="progress-md my-2"
                         max="200"
@@ -231,25 +248,25 @@ function CardsHeader({ name, parentName }) {
                 </Card>
               </Col>
               <Col md="12" xl="4">
-              
+
                 <Card className="card-stats">
                   <CardBody>
                     <Row>
                       <div className="col">
-                      <img
-                       alt="..."
-                        className="img-fluid rounded"
-                        src={require("assets/img/theme/img-1-1000x600.jpg").default}
-                      />
+                        <img
+                          alt="..."
+                          className="img-fluid rounded"
+                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                        />
                         <CardTitle
                           tag="h4"
                           className="text-uppercase text-muted mb-0"><br></br>
                           Web Usability Essentials
                         </CardTitle>
-                        
+
                         <span className="h2 font-weight-bold mb-0"></span>
                       </div>
-                      
+
                       {/* <Col className="col-auto">
                         <div className="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
                           <i className="ni ni-chart-pie-35" />
@@ -264,9 +281,9 @@ function CardsHeader({ name, parentName }) {
                       <span className="text-nowrap">Since last month</span>
                     </p> */}
 
-                      <div>
-                        <br></br>
-                      
+                    <div>
+                      <br></br>
+
                       <Progress
                         className="progress-md my-2"
                         max="100"

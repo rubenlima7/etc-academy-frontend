@@ -52,7 +52,7 @@ function AdminFooter() {
                     href="#pablo"
                     //target="_blank"
                   >
-                    About Us
+                    About
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -60,7 +60,7 @@ function AdminFooter() {
                     href="#pablo"
                     //target="_blank"
                   >
-                    Blog
+                    Courses
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -68,7 +68,7 @@ function AdminFooter() {
                     href="#pablo"
                    // target="_blank"
                   >
-                    License
+                    Contact
                   </NavLink>
                 </NavItem>
               </Nav>

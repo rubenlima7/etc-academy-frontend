@@ -190,15 +190,19 @@ function Tables() {
                           role="button"
                           size="sm"
                         >
-                          <i className="fa fa-solid fa-download" />
+                          <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
                         <DropdownMenu className="dropdown-menu-arrow" right>
                           <DropdownItem
-                            href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
+                            //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
-                            download
+                            //download
+
+
+                            href="http://africau.edu/images/default/sample.pdf" // rmal
+                            target="_blank"
                           >
-                            Download
+                            Open
                           </DropdownItem>
                           {/* <DropdownItem
                             href="#pablo"
@@ -331,14 +335,19 @@ function Tables() {
                           role="button"
                           size="sm"
                         >
-                          <i className="fa fa-solid fa-download" />
+                          <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-arrow" right>
+                        <DropdownMenu className="dropdown-menu-arrow" right> 
                           <DropdownItem
-                            href="src/assets/files/Unit2_AIMandComputeLabs.pdf"  // Lilia
+                            //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
-                            download
-                          > Download
+                            //download
+
+
+                            href="http://africau.edu/images/default/sample.pdf" // rmal
+                            target="_blank"
+                          >
+                            Open
                           </DropdownItem>
                           {/* <DropdownItem
                             href="#pablo"
@@ -471,15 +480,19 @@ function Tables() {
                           role="button"
                           size="sm"
                         >
-                          <i className="fa fa-solid fa-download" />
+                          <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
                         <DropdownMenu className="dropdown-menu-arrow" right>
                           <DropdownItem
-                            href="src/assets/files/Unit3_Storage.pdf"  // Lilia
+                            //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
-                            download
+                            //download
+
+
+                            href="http://africau.edu/images/default/sample.pdf" // rmal
+                            target="_blank"
                           >
-                            Download
+                            Open
                           </DropdownItem>
                           {/* <DropdownItem
                             href="#pablo"
@@ -612,15 +625,19 @@ function Tables() {
                           role="button"
                           size="sm"
                         >
-                          <i className="fa fa-solid fa-download" />
+                          <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
                         <DropdownMenu className="dropdown-menu-arrow" right>
                           <DropdownItem
-                            href="src/assets/files/Unit4_DNS_ELBandAutoScaling.pdf"  // Lilia
+                            //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
-                            download
+                            //download
+
+
+                            href="http://africau.edu/images/default/sample.pdf" // rmal
+                            target="_blank"
                           >
-                            Download
+                            Open
                           </DropdownItem>
                           {/* <DropdownItem
                             href="#pablo"
@@ -753,15 +770,19 @@ function Tables() {
                           role="button"
                           size="sm"
                         >
-                          <i className="fa fa-solid fa-download" />
+                          <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
                         <DropdownMenu className="dropdown-menu-arrow" right>
                           <DropdownItem
-                            href="src/assets/files/Unit5_AppsServless_VPCs.pdf"  // Lilia
+                            //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
-                            download
+                            //download
+
+
+                            href="http://africau.edu/images/default/sample.pdf" // rmal
+                            target="_blank"
                           >
-                            Download
+                            Open
                           </DropdownItem>
                           {/* <DropdownItem
                             href="#pablo"

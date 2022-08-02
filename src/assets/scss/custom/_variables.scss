@@ -51,7 +51,7 @@ $grays: map-merge(("100": $gray-100,
 
 $blue: #5e72e4 !default;
 $indigo: #5603ad !default;
-$purple: #6768AB !default;  // Lilia - mudança de cor
+$purple: #6768AB !default; // Lilia - mudança de cor
 $pink: #f3a4b5 !default;
 $red: #f5365c !default;
 $orange: #fb6340 !default;
@@ -686,13 +686,13 @@ $dropdown-border-color: rgba($black, .15) !default;
 $dropdown-border-radius: $border-radius-lg  !default;
 $dropdown-box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1) !default;
 
-$dropdown-link-color:#39395E; // Lilia - mudança de cor
+$dropdown-link-color: #39395E; // Lilia - mudança de cor
 $dropdown-link-bg: $white  !default;
 
-$dropdown-link-hover-color: $purple;  // Lilia - mudança de cor
+$dropdown-link-hover-color: $purple; // Lilia - mudança de cor
 $dropdown-link-hover-bg: $gray-100  !default;
 
-$dropdown-link-active-color: $purple;  // Lilia - mudança de cor
+$dropdown-link-active-color: $purple; // Lilia - mudança de cor
 $dropdown-link-active-bg: transparent !default;
 
 $dropdown-item-padding-y: .5rem !default;
@@ -760,9 +760,9 @@ $navbar-light-bg: $gray-100  !default;
 $navbar-light-hover-bg: darken($gray-100, 5%) !default;
 $navbar-light-active-bg: darken($gray-100, 5%) !default;
 $navbar-light-border-color: rgba($black, .05) !default;
-$navbar-light-color: #39395E;  // Lilia - mudança de cor
-$navbar-light-hover-color: $purple;  // Lilia - mudança de cor
-$navbar-light-active-color: $purple;  // Lilia - mudança de cor
+$navbar-light-color: #39395E; // Lilia - mudança de cor
+$navbar-light-hover-color: $purple; // Lilia - mudança de cor
+$navbar-light-active-color: $purple; // Lilia - mudança de cor
 $navbar-light-disabled-color: rgba($black, .3) !default;
 $navbar-light-toggler-border-color: transparent !default;
 
@@ -1104,8 +1104,8 @@ $timeline-step-border-color: $timeline-axis-color  !default;
 
 // Chart
 
-$chart-height: 350px !default;
-$chart-height-sm: 230px !default;
+$chart-height: 250px !default;
+$chart-height-sm: 150px !default;
 
 $chart-legend-margin-top: 2.5rem !default;
 $chart-legend-font-size: $font-size-sm  !default;

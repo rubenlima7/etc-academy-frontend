@@ -316,11 +316,11 @@ function CalendarView() {
                       onChange={(e) => setEventTitle(e.target.value)}
                     />
                   </FormGroup>
-                  <FormGroup className="mb-0">
-                    <label className="form-control-label d-block mb-3">
+                  {/* <FormGroup className="mb-0">
+                     <label className="form-control-label d-block mb-3">
                       Status color
-                    </label>
-                    <ButtonGroup
+                    </label> 
+                     <ButtonGroup
                       className="btn-group-toggle btn-group-colors event-tag"
                       data-toggle="buttons"
                     >
@@ -373,7 +373,7 @@ function CalendarView() {
                         onClick={() => setRadios("bg-primary")}
                       />
                     </ButtonGroup>
-                  </FormGroup>
+                  </FormGroup> */}
                 </form>
               </div>
               <div className="modal-footer">
@@ -412,7 +412,7 @@ function CalendarView() {
                       onChange={(e) => setEventTitle(e.target.value)}
                     />
                   </FormGroup>
-                  <FormGroup>
+                  {/* <FormGroup>
                     <label className="form-control-label d-block mb-3">
                       Status color
                     </label>
@@ -469,7 +469,7 @@ function CalendarView() {
                         onClick={() => setRadios("bg-primary")}
                       />
                     </ButtonGroup>
-                  </FormGroup>
+                  </FormGroup> */}
                   <FormGroup>
                     <label className="form-control-label">Description</label>
                     <Input

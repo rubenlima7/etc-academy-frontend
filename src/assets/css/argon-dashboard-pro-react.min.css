@@ -19377,11 +19377,11 @@ a.btn-icon-only {
 
 .chart {
     position: relative;
-    height: 350px
+    height: 250px
 }
 
 .chart-sm {
-    height: 230px
+    height: 150px
 }
 
 .chart-legend {
