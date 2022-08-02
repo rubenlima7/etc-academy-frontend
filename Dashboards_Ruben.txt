@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=jx5hdo50a2M
+https://www.youtube.com/watch?v=K7vHoUwClaM
+https://www.youtube.com/watch?v=BOF79TAIkYQ
+https://www.youtube.com/watch?v=aT4hBwdoEyw
+https://www.youtube.com/watch?v=7aMo75r8kpg
+https://www.youtube.com/watch?v=tNsveb6RRGA
+https://www.youtube.com/watch?v=aMjou4yXWdU
+
+
+package.json:
+"scripts": {
+    "start": "NODE_PATH=./src react-scripts start", //"start": "react-scripts start",
+
+TO WORK, DO THIS ON THE CMD:
+Node version of the dashboard: 14.19.3
+C:\Users\Formando\Documents\Ruben\projecto\frontend>nvm install 14.19.3
+C:\Users\Formando\Documents\Ruben\projecto\frontend>nvm use 14.19.3
+C:\Users\Formando\Documents\Ruben\projecto\frontend>node -v
