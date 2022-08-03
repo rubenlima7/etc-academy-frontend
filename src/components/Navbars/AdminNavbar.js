@@ -141,22 +141,21 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
                           alt="..."
                           src={require("assets/img/theme/Lilia.jpg").default}
                         />
-                      </span> 
+                      </span>
 
                       {/* Lilia - Alteração do perfil e infos */}
 
                       <Media className="ml-3 d-none d-lg-block">
-                        <span className="mb-0 text-sm font-weight-bold text-white"> 
+                        <span className="mb-0 text-sm font-weight-bold text-white">
                           Lília Lopes
                         </span>
                         <br></br>
-                      <span className="mb-0  text-xs text-white"> 
-                        Student 
-                      </span>
+                        <span className="mb-0  text-xs text-white">
+                          Student
+                        </span>
                       </Media>
                     </Media>
                   </DropdownToggle>
-
                 </UncontrolledDropdown>
               </Nav>
 
@@ -219,7 +218,9 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
                           <img
                             alt="..."
                             className="avatar rounded-circle"
-                            src={require("assets/img/theme/Afonso.jpeg").default}
+                            src={
+                              require("assets/img/theme/Afonso.jpeg").default
+                            }
                           />
                         </Col>
                         <div className="col ml--2">
@@ -248,7 +249,9 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
                           <img
                             alt="..."
                             className="avatar rounded-circle"
-                            src={require("assets/img/theme/Afonso.jpeg").default}
+                            src={
+                              require("assets/img/theme/Afonso.jpeg").default
+                            }
                           />
                         </Col>
                         <div className="col ml--2">
@@ -298,7 +301,7 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
                   </ListGroup>
 
                   {/* Lilia - Alteração do botão */}
-                  
+
                   <DropdownItem
                     className="text-center text-info font-weight-bold py-3"
                     href="#pablo"
@@ -308,54 +311,37 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
             </Nav>
             <UncontrolledDropdown nav>
               <DropdownToggle className="nav-link" color="" tag="a">
                 <i className="fa fa-angle-down text-white" />
               </DropdownToggle>
 
-              
               <DropdownMenu right>
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0 text-primary"> </h6>
                 </DropdownItem>
-                
+
                 {/* Lilia - Alteração do icones, menus e cores */}
 
-                <DropdownItem
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   <i className="ni ni-single-02 text-ourgray" />
                   <span>My profile</span>
                 </DropdownItem>
-                <DropdownItem
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   <i className="ni ni-settings-gear-65 text-ourgray" />
                   <span>Account Settings</span>
                 </DropdownItem>
-                <DropdownItem
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   <i className="fa fa-regular fa-credit-card text-ourgray" />
                   <span>Payment Methods</span>
                 </DropdownItem>
-                <DropdownItem
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   <i className="fa fa-solid fa-globe text-ourgray" />
                   <span>Language</span>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   <i className="ni ni-curved-next text-ourgray" />
                   <span>Logout</span>
                 </DropdownItem>
@@ -448,7 +434,7 @@ function AdminNavbar({ theme, sidenavOpen, toggleSidenav }) {
 }
 
 AdminNavbar.defaultProps = {
-  toggleSidenav: () => { },
+  toggleSidenav: () => {},
   sidenavOpen: false,
   theme: "dark",
 };

@@ -22,7 +22,7 @@ import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 function AuthFooter() {
   return (
     <>
-      <footer className="py-5" id="footer-main">
+      <footer className="py-5" id="footer-main"> {/* className="py-5" // rmal */}
         <Container>
           <Row className="align-items-center justify-content-xl-between">
             <Col xl="6">
@@ -30,10 +30,10 @@ function AuthFooter() {
                 © {new Date().getFullYear()}{" "}
                 <a
                   className="font-weight-bold ml-1"
-                  href="https://www.creative-tim.com?ref=adpr-auth-footer"
-                  target="_blank"
+                  href="#" // rmal
+                  //target="_blank" // rmal
                 >
-                  Creative Tim
+                  ETC Academy
                 </a>
               </div>
             </Col>
@@ -41,34 +41,34 @@ function AuthFooter() {
               <Nav className="nav-footer justify-content-center justify-content-xl-end">
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com?ref=adpr-auth-footer"
-                    target="_blank"
+                    href="#" // rmal
+                    //target="_blank" // rmal
                   >
-                    Creative Tim
+                    ETC Academy
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adpr-auth-footer"
-                    target="_blank"
+                    href="#" // rmal
+                    //target="_blank" // rmal
                   >
-                    About Us
+                    Aseful Links
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="http://blog.creative-tim.com?ref=adpr-auth-footer"
-                    target="_blank"
+                    href="#" // rmal
+                    //target="_blank" // rmal
                   >
-                    Blog
+                    Category
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/license?ref=adpr-auth-footer"
-                    target="_blank"
+                    href="#" // rmal
+                    //target="_blank" // rmal
                   >
-                    License
+                    Contact
                   </NavLink>
                 </NavItem>
               </Nav>
