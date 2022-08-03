@@ -54,7 +54,7 @@ function Login() {
                   <small>Sign in with</small>
                 </div>
                 <div className="btn-wrapper text-center">
-                  <Button
+                  {/* <Button // rmal
                     className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
@@ -69,7 +69,7 @@ function Login() {
                       />
                     </span>
                     <span className="btn-inner--text">Github</span>
-                  </Button>
+                  </Button> */}
                   <Button
                     className="btn-neutral btn-icon"
                     color="default"

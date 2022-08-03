@@ -92,23 +92,33 @@ function AdminNavbar() {
             </div>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink to="/admin/dashboard" tag={Link}>
-                  <span className="nav-link-inner--text">Dashboard</span>
+                {/* <NavLink to="/admin/dashboard" tag={Link}>
+                  <span className="nav-link-inner--text">Dashboardzzzz</span> */}
+                <NavLink to="/" tag={Link}>
+                  <span className="nav-link-inner--text font-weight-bolder">
+                    Home
+                  </span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/auth/pricing" tag={Link}>
-                  <span className="nav-link-inner--text">Pricing</span>
+                {/* <NavLink to="/auth/pricing" tag={Link}>
+                  <span className="nav-link-inner--text">Pricing</span> */}
+                <NavLink to="/" tag={Link}>
+                  <span className="nav-link-inner--text">About</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/auth/login" tag={Link}>
-                  <span className="nav-link-inner--text">Login</span>
+                {/* <NavLink to="/auth/login" tag={Link}>
+                  <span className="nav-link-inner--text">Login</span> */}
+                <NavLink to="/" tag={Link}>
+                  <span className="nav-link-inner--text">Courses</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/auth/register" tag={Link}>
-                  <span className="nav-link-inner--text">Register</span>
+                {/* <NavLink to="/auth/register" tag={Link}>
+                  <span className="nav-link-inner--text">Register</span> */}
+                <NavLink to="#/" tag={Link}>
+                  <span className="nav-link-inner--text">Contact</span>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -167,21 +177,27 @@ function AdminNavbar() {
                   Follow us on Twitter
                 </UncontrolledTooltip>
               </NavItem>
+              </Nav> {/* // rmal  */}
+              <Nav className="align-items-lg-center ml-lg-auto" navbar> {/* // rmal  */}
               <NavItem>
-                <NavLink
-                  className="nav-link-icon"
-                  href="https://github.com/creativetimofficial?ref=creative-tim"
-                  id="tooltip931502898"
-                  target="_blank"
-                >
-                  <i className="fab fa-github" />
-                  <span className="nav-link-inner--text d-lg-none">Github</span>
+                <NavLink to="/auth/login" tag={Link}>
+                  <span className="nav-link-inner--text">Login</span>
                 </NavLink>
-                <UncontrolledTooltip delay={0} target="tooltip931502898">
-                  Star us on Github
-                </UncontrolledTooltip>
               </NavItem>
               <NavItem className="d-none d-lg-block ml-lg-4">
+                <Button
+                  className="btn-neutral btn-icon"
+                  color="default"
+                  href="/auth/register"
+                  //target="_blank"
+                >
+                  {/* <span className="btn-inner--icon">
+                    <i className="fas fa-shopping-cart mr-2" />
+                  </span> */}
+                  <span className="nav-link-inner--text">Register</span>
+                </Button>
+              </NavItem>
+              {/* <NavItem className="d-none d-lg-block ml-lg-4">
                 <Button
                   className="btn-neutral btn-icon"
                   color="default"
@@ -193,7 +209,7 @@ function AdminNavbar() {
                   </span>
                   <span className="nav-link-inner--text">Purchase now</span>
                 </Button>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </UncontrolledCollapse>
         </Container>

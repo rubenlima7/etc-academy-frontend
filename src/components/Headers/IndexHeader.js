@@ -28,34 +28,36 @@ function IndexHeader() {
             <Row className="align-items-center">
               <Col lg="6">
                 <div className="pr-5">
-                  <h1 className="display-2 text-white font-weight-bold mb-0">
-                    Argon Dashboard PRO React
-                  </h1>
                   <h2 className="display-4 text-white font-weight-light">
+                    Online Learning Platform
+                  </h2>
+                  <h1 className="display-2 text-white font-weight-bold mb-0">
+                    Learn a new course from home.
+                  </h1>
+                  {/* <h3 className="display-4 text-white font-weight-light">
                     A beautiful premium dashboard for Bootstrap 4, React and
                     Reactstrap.
-                  </h2>
+                  </h3> */}
                   <p className="text-white mt-4">
-                    Argon perfectly combines reusable HTML and modular CSS with
-                    a modern styling and beautiful markup throughout each HTML
-                    template in the pack.
+                    Find various courses to learn and improve your skills.
                   </p>
                   <div className="mt-5">
                     <Button
                       className="btn-neutral my-2"
                       color="default"
                       to="/admin/dashboard"
+                      // to="/auth/register" // rmal
                       tag={Link}
                     >
-                      Explore Dashboard
+                      Get Started
                     </Button>
-                    <Button
+                    {/* <Button
                       className="my-2"
                       color="default"
                       href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adpr-auth-navbar"
                     >
                       Purchase now
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </Col>

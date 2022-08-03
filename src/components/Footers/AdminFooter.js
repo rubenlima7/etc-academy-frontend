@@ -41,7 +41,7 @@ function AdminFooter() {
               <Nav className="nav-footer justify-content-center justify-content-lg-end">
                 <NavItem>
                   <NavLink
-                    href="#pablo"
+                    href="#"
                     //target="_blank"
                   >
                     ETC Academy
@@ -49,7 +49,7 @@ function AdminFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="#pablo"
+                    href="#"
                     //target="_blank"
                   >
                     About
@@ -57,7 +57,7 @@ function AdminFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="#pablo"
+                    href="#"
                     //target="_blank"
                   >
                     Courses
@@ -65,8 +65,8 @@ function AdminFooter() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="#pablo"
-                   // target="_blank"
+                    href="#"
+                    // target="_blank"
                   >
                     Contact
                   </NavLink>

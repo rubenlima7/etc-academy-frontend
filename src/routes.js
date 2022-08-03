@@ -41,7 +41,6 @@ import Validation from "views/pages/forms/Validation.js";
 import Vector from "views/pages/maps/Vector.js";
 import Widgets from "views/pages/Widgets.js";
 
-
 const routes = [
   {
     path: "/dashboard",
@@ -75,7 +74,6 @@ const routes = [
     path: "#", // Lilia - alteração de nome da path
     name: "My Schedule", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-clock text-ourgray", // Lilia - alteração de icon
-
   },
   {
     path: "/calendar",
@@ -188,12 +186,12 @@ const routes = [
     icon: "ni ni-chart-pie-35 text-info",
     component: Charts,
     layout: "/admin",
-  },
+  },*/ // rmal
   {
     collapse: true,
-    name: "Menu Test",
-    icon: "fa fa-solid fa-clock text-gray", // Lilia - alteração de icon
-    state: "examplesCollapse",
+    name: "", // rmal tirei o texto "Examples"
+    icon: "", // Lilia - alteração de icon // rmal tirei o icon
+    state: "", // rmal tirei o "examplesCollapse"
     views: [
       {
         path: "/pricing",
@@ -222,7 +220,7 @@ const routes = [
         miniName: "L",
         component: Lock,
         layout: "/auth",
-      },
+      } /* // rmal
       {
         path: "/timeline",
         name: "Timeline",
@@ -243,9 +241,9 @@ const routes = [
         miniName: "RS",
         component: RTLSupport,
         layout: "/rtl",
-      },
+      },*/, // rmal
     ],
-  },
+  } /* // rmal
   {
     collapse: true,
     name: "Menu test 2", // Lilia - alteração de nome do menu
@@ -350,7 +348,7 @@ const routes = [
         layout: "/admin",
       },
     ],
-  }, */
+  }, */,
 ];
 
 export default routes;

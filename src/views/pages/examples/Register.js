@@ -55,7 +55,7 @@ function Register() {
                   <small>Sign up with</small>
                 </div>
                 <div className="text-center">
-                  <Button
+                  {/* <Button // rmal
                     className="btn-neutral btn-icon mr-4"
                     color="default"
                     href="#pablo"
@@ -70,7 +70,7 @@ function Register() {
                       />
                     </span>
                     <span className="btn-inner--text">Github</span>
-                  </Button>
+                  </Button> */}
                   <Button
                     className="btn-neutral btn-icon"
                     color="default"
@@ -151,14 +151,60 @@ function Register() {
                       />
                     </InputGroup>
                   </FormGroup>
-                  <div className="text-muted font-italic">
+
+                  {/* Inicio da adição // rmal */}
+                  <div className="text-center text-muted mb-2">
+                    <strong>Join as a Student, Teacher or Institution</strong>
+                  </div>
+                  <div className="custom-control custom-control-alternative custom-checkbox">
+                    <input
+                      className="custom-control-input"
+                      id=" customCheckLogin"
+                      type="checkbox"
+                    />
+                    <label
+                      className="custom-control-label"
+                      htmlFor=" customCheckLogin"
+                    >
+                      <span className="text-muted">I'm a Student</span>
+                    </label>
+                  </div>
+                  <div className="custom-control custom-control-alternative custom-checkbox">
+                    <input
+                      className="custom-control-input"
+                      id=" customCheckLogin"
+                      type="checkbox"
+                    />
+                    <label
+                      className="custom-control-label"
+                      htmlFor=" customCheckLogin"
+                    >
+                      <span className="text-muted">I'm a Teacher</span>
+                    </label>
+                  </div>
+                  <div className="custom-control custom-control-alternative custom-checkbox">
+                    <input
+                      className="custom-control-input"
+                      id=" customCheckLogin"
+                      type="checkbox"
+                    />
+                    <label
+                      className="custom-control-label"
+                      htmlFor=" customCheckLogin"
+                    >
+                      <span className="text-muted">I'm an Institution</span>
+                    </label>
+                  </div>
+                  {/* Fim da adição // rmal */}
+
+                  {/* <div className="text-muted font-italic"> // rmal
                     <small>
                       password strength:{" "}
                       <span className="text-success font-weight-700">
                         strong
                       </span>
                     </small>
-                  </div>
+                  </div> */}
                   <Row className="my-4">
                     <Col xs="12">
                       <div className="custom-control custom-control-alternative custom-checkbox">
@@ -172,13 +218,48 @@ function Register() {
                           htmlFor="customCheckRegister"
                         >
                           <span className="text-muted">
-                            I agree with the{" "}
+                            Send me emails with news, discounts and courses that
+                            fits my needs.
+                          </span>
+                        </label>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row className="my-4">
+                    <Col xs="12">
+                      <div className="custom-control custom-control-alternative custom-checkbox">
+                        <input
+                          className="custom-control-input"
+                          id="customCheckRegister"
+                          type="checkbox"
+                        />
+                        <label
+                          className="custom-control-label"
+                          htmlFor="customCheckRegister"
+                        >
+                          <span className="text-muted">
+                            Yes, I understand and agree to the{" "}
+                            <a
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                            >
+                              ETC academy Terms of Service
+                            </a>
+                            , including the{" "}
+                            <a
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                            >
+                              User Agreement{" "}
+                            </a>
+                            and{" "}
                             <a
                               href="#pablo"
                               onClick={(e) => e.preventDefault()}
                             >
                               Privacy Policy
                             </a>
+                            .
                           </span>
                         </label>
                       </div>
@@ -186,7 +267,7 @@ function Register() {
                   </Row>
                   <div className="text-center">
                     <Button className="mt-4" color="info" type="button">
-                      Create account
+                      Create my Account
                     </Button>
                   </div>
                 </Form>
