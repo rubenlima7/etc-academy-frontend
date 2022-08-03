@@ -43,7 +43,7 @@ function AdminNavbar() {
           <NavbarBrand to="/" tag={Link}>
             <img
               alt="..."
-              src={require("assets/img/brand/argon-react-white.png").default}
+              src={require("assets/img/brand/Logo_ETC_branco.png").default}
             />
           </NavbarBrand>
           <button
@@ -177,8 +177,8 @@ function AdminNavbar() {
                   Follow us on Twitter
                 </UncontrolledTooltip>
               </NavItem>
-              </Nav> {/* // rmal  */}
-              <Nav className="align-items-lg-center ml-lg-auto" navbar> {/* // rmal  */}
+            </Nav> {/* // rmal  */}
+            <Nav className="align-items-lg-center ml-lg-auto" navbar> {/* // rmal  */}
               <NavItem>
                 <NavLink to="/auth/login" tag={Link}>
                   <span className="nav-link-inner--text">Login</span>
@@ -189,7 +189,7 @@ function AdminNavbar() {
                   className="btn-neutral btn-icon"
                   color="default"
                   href="/auth/register"
-                  //target="_blank"
+                //target="_blank"
                 >
                   {/* <span className="btn-inner--icon">
                     <i className="fas fa-shopping-cart mr-2" />

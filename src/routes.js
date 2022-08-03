@@ -192,6 +192,7 @@ const routes = [
     name: "", // rmal tirei o texto "Examples"
     icon: "", // Lilia - alteração de icon // rmal tirei o icon
     state: "", // rmal tirei o "examplesCollapse"
+    invisible: "true",
     views: [
       {
         path: "/pricing",

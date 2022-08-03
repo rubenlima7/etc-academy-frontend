@@ -2442,7 +2442,24 @@ function Dashboard() {
                       </div>
                     </Row>
                   </ListGroupItem>
+                  <ListGroupItem className="px-3">
+                    <Row className="align-items-center">
+                      <Col className="col-auto">
+                        <a
+                          className="avatar avatar-xs rouded-circle"
+                        >
+                          <img
+                            alt="..."
+                            src={require("assets/days/9.png").default}
+                          />
+                        </a>
+                      </Col>
+                      <div className="col">
+                        <h5>Project Presentation</h5>
 
+                      </div>
+                    </Row>
+                  </ListGroupItem>
                   <ListGroupItem className="px-3">
                     <Row className="align-items-center">
                       <Col className="col-auto">

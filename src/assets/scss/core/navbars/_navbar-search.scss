@@ -9,12 +9,14 @@
         @include transition($transition-bg);
         transition-delay: $transition-base-time;
         border-radius: 10px;  // Lilia - alteração no radius da caixa de pesquisa
+        
 
 
         .input-group-text {
             background-color: transparent;
             padding-left: 1rem;
             border: 0;
+            
         }
     }
 

@@ -157,10 +157,10 @@ function CardsHeader({ name, parentName }) {
                 <Card className="card-stats">
                   <CardBody>
                     <Row>
-                      <div className="col">
+                      <div className="col mt-2">
                         <img alt="..."
                           className="img-fluid rounded"
-                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                          src={require("assets/img/theme/ux_ui.jpg").default}
                         />
                         <CardTitle
                           tag="h4"
@@ -204,11 +204,11 @@ function CardsHeader({ name, parentName }) {
                 <Card className="card-stats">
                   <CardBody>
                     <Row>
-                      <div className="col">
+                      <div className="col mt-2">
                         <img
                           alt="..."
                           className="img-fluid rounded"
-                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                          src={require("assets/img/theme/web3.jpg").default}
                         />
                         <CardTitle
                           tag="h4"
@@ -252,11 +252,11 @@ function CardsHeader({ name, parentName }) {
                 <Card className="card-stats">
                   <CardBody>
                     <Row>
-                      <div className="col">
+                      <div className="col mt-2">
                         <img
                           alt="..."
                           className="img-fluid rounded"
-                          src={require("assets/img/theme/img-1-1000x600.jpg").default}
+                          src={require("assets/img/theme/web_usab.jpg").default}
                         />
                         <CardTitle
                           tag="h4"

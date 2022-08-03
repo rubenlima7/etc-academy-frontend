@@ -126,12 +126,12 @@ const events = [
 
   {
     id: 11,
-    title: "EVENT TEST",
+    title: "Project Presentation",
     start: new Date(y, m, 9),
     allDay: true,
     className: "bg-purple",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Project presentations at ISCTE auditorium. ETC Academy Presentation!",
   },
 ];
 

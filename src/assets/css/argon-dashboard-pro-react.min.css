@@ -1954,7 +1954,7 @@ html.rtl {
     --danger: #f5365c;
     --light: #adb5bd;
     --dark: #212529;
-    --default: #172b4d;
+    --default: #39395E;
     --white: #fff;
     --neutral: #fff;
     --darker: #000;
@@ -4080,7 +4080,7 @@ pre code {
 
 .table .thead-dark th {
     color: #f8f9fe;
-    background-color: #172b4d;
+    background-color: #39395E;
     border-color: #1f3a68
 }
 
@@ -4092,7 +4092,7 @@ pre code {
 
 .table-dark {
     color: #f8f9fe;
-    background-color: #172b4d
+    background-color: #39395E
 }
 
 .table-dark th,
@@ -5051,15 +5051,15 @@ fieldset:disabled a.btn {
 
 .btn-default {
     color: #fff;
-    background-color: #172b4d;
-    border-color: #172b4d;
+    background-color: #39395E;
+    border-color: #39395E;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)
 }
 
 .btn-default:hover {
     color: #fff;
-    background-color: #172b4d;
-    border-color: #172b4d
+    background-color: #39395E;
+    border-color: #39395E
 }
 
 .btn-default:focus,
@@ -5070,8 +5070,8 @@ fieldset:disabled a.btn {
 .btn-default.disabled,
 .btn-default:disabled {
     color: #fff;
-    background-color: #172b4d;
-    border-color: #172b4d
+    background-color: #39395E;
+    border-color: #39395E
 }
 
 .btn-default:not(:disabled):not(.disabled):active,
@@ -5079,7 +5079,7 @@ fieldset:disabled a.btn {
 .show>.btn-default.dropdown-toggle {
     color: #fff;
     background-color: #0b1526;
-    border-color: #172b4d
+    border-color: #39395E
 }
 
 .btn-default:not(:disabled):not(.disabled):active:focus,
@@ -5510,16 +5510,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-default {
-    color: #172b4d;
+    color: #39395E;
     background-color: transparent;
     background-image: none;
-    border-color: #172b4d
+    border-color: #39395E
 }
 
 .btn-outline-default:hover {
     color: #fff;
-    background-color: #172b4d;
-    border-color: #172b4d
+    background-color: #39395E;
+    border-color: #39395E
 }
 
 .btn-outline-default:focus,
@@ -5529,7 +5529,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-default.disabled,
 .btn-outline-default:disabled {
-    color: #172b4d;
+    color: #39395E;
     background-color: transparent
 }
 
@@ -5537,8 +5537,8 @@ fieldset:disabled a.btn {
 .btn-outline-default:not(:disabled):not(.disabled).active,
 .show>.btn-outline-default.dropdown-toggle {
     color: #fff;
-    background-color: #172b4d;
-    border-color: #172b4d
+    background-color: #39395E;
+    border-color: #39395E
 }
 
 .btn-outline-default:not(:disabled):not(.disabled):active:focus,
@@ -9583,7 +9583,7 @@ button.bg-dark:focus {
 }
 
 .bg-default {
-    background-color: #172b4d !important
+    background-color: #39395E !important
 }
 
 a.bg-default:hover,
@@ -9707,7 +9707,7 @@ button.bg-darker:focus {
 }
 
 .border-default {
-    border-color: #172b4d !important
+    border-color: #39395E !important
 }
 
 .border-white {
@@ -18047,7 +18047,7 @@ a.text-dark:focus {
 }
 
 .text-default {
-    color: #172b4d !important
+    color: #39395E !important
 }
 
 a.text-default:hover,
@@ -18349,7 +18349,7 @@ a.text-darker:focus {
 
 .alert-secondary .close:hover>span:not(.sr-only),
 .alert-secondary .close:focus>span:not(.sr-only) {
-    color: #172b4d
+    color: #39395E
 }
 
 .alert-notify {
@@ -18570,7 +18570,7 @@ a.text-darker:focus {
 }
 
 .breadcrumb-dark {
-    background-color: #172b4d
+    background-color: #39395E
 }
 
 .breadcrumb-dark .breadcrumb-item {
@@ -19678,12 +19678,12 @@ a.btn-icon-only {
 }
 
 .custom-checkbox-default .custom-control-input:checked~.custom-control-label::before {
-    border-color: #172b4d;
-    background-color: #172b4d
+    border-color: #39395E;
+    background-color: #39395E
 }
 
 .custom-checkbox-default .custom-control-input:checked~.custom-control-label::after {
-    background-image: #172b4d
+    background-image: #39395E
 }
 
 .custom-checkbox-white .custom-control-input:checked~.custom-control-label::before {
@@ -19989,19 +19989,19 @@ a.btn-icon-only {
 }
 
 .custom-toggle-default input:checked+.custom-toggle-slider {
-    border-color: #172b4d
+    border-color: #39395E
 }
 
 .custom-toggle-default input:checked+.custom-toggle-slider:before {
-    background: #172b4d
+    background: #39395E
 }
 
 .custom-toggle-default input:checked+.custom-toggle-slider:after {
-    color: #172b4d
+    color: #39395E
 }
 
 .custom-toggle-default input:disabled:checked+.custom-toggle-slider {
-    border-color: #172b4d
+    border-color: #39395E
 }
 
 .custom-toggle-default input:disabled:checked+.custom-toggle-slider:before {
@@ -20113,7 +20113,7 @@ a.btn-icon-only {
 
 .dropdown-menu a.media:hover .heading,
 .dropdown-menu a.media:hover p {
-    color: #172b4d !important
+    color: #39395E !important
 }
 
 .dropdown-menu-dark .h1,
@@ -20826,7 +20826,7 @@ textarea[resize="horizontal"] {
 }
 
 .checklist-item-default:before {
-    background-color: #172b4d
+    background-color: #39395E
 }
 
 .checklist-item-white:before {
@@ -21111,7 +21111,7 @@ textarea[resize="horizontal"] {
 }
 
 .modal-default .modal-content {
-    background-color: #172b4d;
+    background-color: #39395E;
     color: #fff
 }
 
@@ -21378,7 +21378,7 @@ textarea[resize="horizontal"] {
 @media (max-width: 991.98px) {
     .navbar-horizontal .navbar-nav .nav-link {
         padding: .625rem 0;
-        color: #172b4d !important
+        color: #39395E !important
     }
 
     .navbar-horizontal .navbar-nav .dropdown-menu {
@@ -22455,7 +22455,7 @@ textarea[resize="horizontal"] {
 
 .sidenav-toggler-line {
     height: 2px;
-    background-color: #172b4d;
+    background-color: #39395E;
     display: block;
     position: relative
 }
@@ -23256,11 +23256,11 @@ textarea[resize="horizontal"] {
 }
 
 .popover-default {
-    background-color: #172b4d
+    background-color: #39395E
 }
 
 .popover-default .popover-header {
-    background-color: #172b4d;
+    background-color: #39395E;
     color: #fff
 }
 
@@ -23274,22 +23274,22 @@ textarea[resize="horizontal"] {
 
 .popover-default.bs-popover-top .arrow::after,
 .popover-default.bs-popover-auto[x-placement^="top"] .arrow::after {
-    border-top-color: #172b4d
+    border-top-color: #39395E
 }
 
 .popover-default.bs-popover-right .arrow::after,
 .popover-default.bs-popover-auto[x-placement^="right"] .arrow::after {
-    border-right-color: #172b4d
+    border-right-color: #39395E
 }
 
 .popover-default.bs-popover-bottom .arrow::after,
 .popover-default.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-    border-bottom-color: #172b4d
+    border-bottom-color: #39395E
 }
 
 .popover-default.bs-popover-left .arrow::after,
 .popover-default.bs-popover-auto[x-placement^="left"] .arrow::after {
-    border-left-color: #172b4d
+    border-left-color: #39395E
 }
 
 .popover-white {
@@ -24055,7 +24055,7 @@ textarea[resize="horizontal"] {
     }
 
     [data-timeline-axis-color="default"]:before {
-        border-color: #172b4d
+        border-color: #39395E
     }
 
     [data-timeline-axis-color="white"]:before {
@@ -24395,7 +24395,7 @@ button.bg-lighter:focus {
 }
 
 .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important
+    background: linear-gradient(87deg, #39395E 0, #1a174d 100%) !important
 }
 
 .bg-gradient-white {
@@ -24690,7 +24690,7 @@ button.section-darker:focus {
 }
 
 .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important
+    background: linear-gradient(87deg, #39395E 0, #1a174d 100%) !important
 }
 
 .bg-gradient-white {
@@ -24770,11 +24770,11 @@ button.section-darker:focus {
 }
 
 .fill-default {
-    fill: #172b4d
+    fill: #39395E
 }
 
 .stroke-default {
-    stroke: #172b4d
+    stroke: #39395E
 }
 
 .fill-white {
@@ -25955,7 +25955,7 @@ a.text-lighter:focus {
     padding: .625rem .625rem .5rem;
     margin: .125rem;
     border-radius: .25rem;
-    background: #172b4d;
+    background: #39395E;
     color: #fff;
     line-height: 1.5;
     box-shadow: 0 1px 2px rgba(68, 68, 68, 0.25);
@@ -28767,7 +28767,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .bootstrap-datetimepicker-widget table td.old>div,
 .bootstrap-datetimepicker-widget table td.new>div {
-    color: #172b4d
+    color: #39395E
 }
 
 .bootstrap-datetimepicker-widget table td.today,

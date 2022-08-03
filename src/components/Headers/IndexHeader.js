@@ -19,10 +19,13 @@ import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Card, CardBody, Container, Row, Col } from "reactstrap";
 
+
 function IndexHeader() {
   return (
     <>
-      <div className="header bg-info pt-5 pb-7">
+
+
+      <div className="header bg-purple pt-5 pb-7">
         <Container>
           <div className="header-body">
             <Row className="align-items-center">
@@ -41,12 +44,17 @@ function IndexHeader() {
                   <p className="text-white mt-4">
                     Find various courses to learn and improve your skills.
                   </p>
+                  <p className="ni ni-check-bold text-white mt-4"> 100+ Online Courses</p> <br></br>
+                  <p className="ni ni-check-bold text-white mt-4"> Experienced Teachers</p> <br></br>
+                  <p className="ni ni-check-bold text-white mt-4"> Dedicated Forum</p>
                   <div className="mt-5">
                     <Button
                       className="btn-neutral my-2"
                       color="default"
-                      to="/admin/dashboard"
+                      // to="/admin/dashboard"
                       // to="/auth/register" // rmal
+                      to="/auth/login"
+                      
                       tag={Link}
                     >
                       Get Started
@@ -66,46 +74,40 @@ function IndexHeader() {
                   <Col md="6">
                     <Card>
                       <CardBody>
-                        <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow mb-4">
-                          <i className="ni ni-active-40" />
+                        <div className="icon icon-shape bg-gradient-pink text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-hat-3" />
                         </div>
-                        <h5 className="h3">Components</h5>
-                        <p>Argon comes with over 70 handcrafted components.</p>
+                        <h5 className="h3">Attend Classes</h5>
+                        <p>Attending classes help you make connections between concepts.</p>
                       </CardBody>
                     </Card>
                     <Card>
                       <CardBody>
-                        <div className="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
-                          <i className="ni ni-active-40" />
+                        <div className="icon icon-shape bg-gradient-pink text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-spaceship" />
                         </div>
-                        <h5 className="h3">Plugins</h5>
-                        <p>
-                          Fully integrated and extendable third-party plugins
-                          that you will love.
-                        </p>
+                        <h5 className="h3">Learn New Skills</h5>
+                        <p>Learning new skills is essential to advancing your career.</p>
                       </CardBody>
                     </Card>
                   </Col>
                   <Col className="pt-lg-5 pt-4" md="6">
                     <Card className="mb-4">
                       <CardBody>
-                        <div className="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
-                          <i className="ni ni-active-40" />
+                        <div className="icon icon-shape bg-gradient-pink text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-chat-round" />
                         </div>
-                        <h5 className="h3">Pages</h5>
-                        <p>
-                          From simple to complex, you get a beautiful set of 15+
-                          page examples.
-                        </p>
+                        <h5 className="h3">Find Peers</h5>
+                        <p>Networking and sharing experiences amongst peers is critical.</p>
                       </CardBody>
                     </Card>
                     <Card className="mb-4">
                       <CardBody>
-                        <div className="icon icon-shape bg-gradient-warning text-white rounded-circle shadow mb-4">
-                          <i className="ni ni-active-40" />
+                        <div className="icon icon-shape bg-gradient-pink text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-laptop" />
                         </div>
-                        <h5 className="h3">Documentation</h5>
-                        <p>You will love how easy is to to work with Argon.</p>
+                        <h5 className="h3">100% Remote</h5>
+                        <p>Allowing students to learn where they are comfortable contributes to better learning.</p>
                       </CardBody>
                     </Card>
                   </Col>

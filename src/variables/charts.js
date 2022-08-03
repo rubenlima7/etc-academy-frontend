@@ -170,7 +170,7 @@ var colors = {
     900: "#212529",
   },
   theme: {
-    default: "#172b4d",
+    default: "#39395E",
     primary: "#6768AB",
     secondary: "#f4f5f7",
     info: "#6768AB",
@@ -196,8 +196,8 @@ function chartOptions() {
       global: {
         responsive: true,
         maintainAspectRatio: false,
-        defaultColor: mode === "dark" ? colors.gray[700] : colors.gray[600],
-        defaultFontColor: mode === "dark" ? colors.gray[700] : colors.gray[600],
+        defaultColor: mode === "dark" ? colors.gray[700] : colors.gray[100],
+        defaultFontColor: mode === "dark" ? colors.gray[700] : colors.gray[100],
         defaultFontFamily: fonts.base,
         defaultFontSize: 13,
         layout: {
@@ -388,8 +388,8 @@ let chartExample2 = {
           },
           ticks: {
             callback: function (value) {
-              if (!(value % 10)) {
-                //return ' ' + value + 'H'
+              if (!(value % 2)) {
+                return '' + value + 'H'
                 return value;
               }
             },
@@ -400,9 +400,9 @@ let chartExample2 = {
     tooltips: {
       callbacks: {
         label: function (item, data) {
-          var label = data.datasets[item.datasetIndex].label || "";
+          var label = data.datasets[item.datasetIndex].label || " ";
           var yLabel = item.yLabel;
-          var content = "";
+          var content = "Hours attended: ";
           if (data.datasets.length > 1) {
             content += label;
           }
@@ -419,6 +419,7 @@ let chartExample2 = {
         label: "Sales",
         data: [0, 2, 4, 2, 6, 4, 8, 10],
         maxBarThickness: 10,
+        
       },
     ],
   },

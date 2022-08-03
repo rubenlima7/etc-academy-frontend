@@ -22,14 +22,14 @@ import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
 function AuthFooter() {
   return (
     <>
-      <footer className="py-5" id="footer-main"> {/* className="py-5" // rmal */}
+      <footer className="py-5 bg-default" id="footer-main"> {/* className="py-5" // rmal */}
         <Container>
           <Row className="align-items-center justify-content-xl-between">
             <Col xl="6">
-              <div className="copyright text-center text-xl-left text-muted">
+              <div className="copyright text-center text-lg-left text-muted text-white">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  className="font-weight-bold ml-1"
+                  className="font-weight-bold ml-1 text-white"
                   href="#" // rmal
                   //target="_blank" // rmal
                 >
@@ -38,7 +38,7 @@ function AuthFooter() {
               </div>
             </Col>
             <Col xl="6">
-              <Nav className="nav-footer justify-content-center justify-content-xl-end">
+              <Nav className="nav-footer justify-content-center justify-content-lg-end text-white">
                 <NavItem>
                   <NavLink
                     href="#" // rmal
@@ -52,7 +52,7 @@ function AuthFooter() {
                     href="#" // rmal
                     //target="_blank" // rmal
                   >
-                    Aseful Links
+                    About
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -60,7 +60,7 @@ function AuthFooter() {
                     href="#" // rmal
                     //target="_blank" // rmal
                   >
-                    Category
+                    Courses
                   </NavLink>
                 </NavItem>
                 <NavItem>

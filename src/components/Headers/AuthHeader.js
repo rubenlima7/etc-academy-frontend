@@ -22,12 +22,12 @@ import { Container, Row, Col } from "reactstrap";
 function AuthHeader({ title, lead }) {
   return (
     <>
-      <div className="header bg-gradient-info py-7 py-lg-8 pt-lg-9">
+      <div className="header bg-gradient-info py-7 py-lg-7 pt-lg-8">
         <Container>
           <div className="header-body text-center mb-7">
             <Row className="justify-content-center">
-              <Col className="px-5" lg="6" md="8" xl="5">
-                {title ? <h1 className="text-white">{title}</h1> : null}
+              <Col className="px-5" lg="6" md="4" xl="8">
+                {title ? <h1 className="text-white text-lg">{title}</h1> : null}
                 {lead ? <p className="text-lead text-white">{lead}</p> : null}
               </Col>
             </Row>

@@ -36,61 +36,26 @@ import {
 // core components
 import AuthHeader from "components/Headers/AuthHeader.js";
 
+// react library for routing
+import { Link } from "react-router-dom";
+
 function Login() {
   const [focusedEmail, setfocusedEmail] = React.useState(false);
   const [focusedPassword, setfocusedPassword] = React.useState(false);
   return (
     <>
       <AuthHeader
-        title="Welcome!"
-        lead="Use these awesome forms to login or create new account in your project for free."
+        title="Log In to ETC Academy" 
+        //lead="Use these awesome forms to login or create new account in your project for free."
       />
-      <Container className="mt--8 pb-5">
+      <Container className="mt--9 pb-5">
         <Row className="justify-content-center">
           <Col lg="5" md="7">
-            <Card className="bg-secondary border-0 mb-0">
-              <CardHeader className="bg-transparent pb-5">
-                <div className="text-muted text-center mt-2 mb-3">
-                  <small>Sign in with</small>
-                </div>
-                <div className="btn-wrapper text-center">
-                  {/* <Button // rmal
-                    className="btn-neutral btn-icon"
-                    color="default"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <span className="btn-inner--icon mr-1">
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/icons/common/github.svg").default
-                        }
-                      />
-                    </span>
-                    <span className="btn-inner--text">Github</span>
-                  </Button> */}
-                  <Button
-                    className="btn-neutral btn-icon"
-                    color="default"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <span className="btn-inner--icon mr-1">
-                      <img
-                        alt="..."
-                        src={
-                          require("assets/img/icons/common/google.svg").default
-                        }
-                      />
-                    </span>
-                    <span className="btn-inner--text">Google</span>
-                  </Button>
-                </div>
-              </CardHeader>
+            <Card className="bg-secondary border-0">
+             
               <CardBody className="px-lg-5 py-lg-5">
                 <div className="text-center text-muted mb-4">
-                  <small>Or sign in with credentials</small>
+                  <small>Log in with credentials</small>
                 </div>
                 <Form role="form">
                   <FormGroup
@@ -131,35 +96,83 @@ function Login() {
                       />
                     </InputGroup>
                   </FormGroup>
-                  <div className="custom-control custom-control-alternative custom-checkbox">
+                  <div className="custom-control custom-checkbox custom-checkbox-info">
                     <input
                       className="custom-control-input"
-                      id=" customCheckLogin"
+                      id="chk-todo-task-9"
                       type="checkbox"
                     />
                     <label
-                      className="custom-control-label"
-                      htmlFor=" customCheckLogin"
+                      className="custom-control-label text-xs"
+                      htmlFor="chk-todo-task-9"
                     >
                       <span className="text-muted">Remember me</span>
                     </label>
                   </div>
                   <div className="text-center">
-                    <Button className="my-4" color="info" type="button">
-                      Sign in
+                    {/* <Button className="my-4" color="info" type="button">
+                      Log in
+                    </Button> */}
+                    <Button
+                      className="my-4 mb--1"
+                      color="info"
+                      to="/admin/dashboard"
+                      // to="/auth/register" // rmal
+                      tag={Link}
+                    >
+                      Log In
                     </Button>
                   </div>
+                  <hr></hr>
+                  <div className="text-center text-muted mt-0 mb-4">
+                   <small>or log in with</small> 
+                </div> 
+                <div className="btn-wrapper text-center">
+                  {/* <Button // rmal
+                    className="btn-neutral btn-icon"
+                    color="default"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <span className="btn-inner--icon mr-1">
+                      <img
+                        alt="..."
+                        src={
+                          require("assets/img/icons/common/github.svg").default
+                        }
+                      />
+                    </span>
+                    <span className="btn-inner--text">Github</span>
+                  </Button> */}
+                  <Button
+                    className="btn-neutral btn-icon"
+                    color="default"
+                    href="#pablo"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    <span className="btn-inner--icon mr-2">
+                      <img
+                        alt="..."
+                        src={
+                          require("assets/img/icons/common/google.svg").default
+                        }
+                      />
+                    </span>
+                    <span className="btn-inner--text">Google</span>
+                  </Button>
+                </div>
+                
                 </Form>
               </CardBody>
             </Card>
-            <Row className="mt-3">
+            <Row className="mt-2">
               <Col xs="6">
                 <a
                   className="text-light"
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                  <small>Forgot password?</small>
+                  <small>Forgot your password? </small>
                 </a>
               </Col>
               <Col className="text-right" xs="6">
@@ -167,8 +180,9 @@ function Login() {
                   className="text-light"
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
+                  
                 >
-                  <small>Create new account</small>
+                  <small>Don’t have an account?</small>
                 </a>
               </Col>
             </Row>
