@@ -25,7 +25,7 @@ function IndexHeader() {
     <>
 
 
-      <div className="header bg-purple pt-5 pb-7">
+      <div className="header bg-gradient-purple pt-5 pb-7">
         <Container>
           <div className="header-body">
             <Row className="align-items-center">
@@ -54,7 +54,7 @@ function IndexHeader() {
                       // to="/admin/dashboard"
                       // to="/auth/register" // rmal
                       to="/auth/login"
-                      
+
                       tag={Link}
                     >
                       Get Started
@@ -70,6 +70,96 @@ function IndexHeader() {
                 </div>
               </Col>
               <Col lg="6">
+                <Row className="pt-5">
+                  <Col md="6">
+                    <Card>
+                      {/* <img src={ require('../../assets/img/theme/exemplo_imagem.jpg').default } className="homeimage" alt="homeimage" /> // rmal */}
+                      <img
+                        src={
+                          require("../../assets/img/theme/bg_img2f.jpg")
+                            .default
+                        }
+                        className="img-fluid rounded"
+                        alt="homeimage"
+                      />
+                      {/* <CardBody> // rmal
+                      <div className="icon icon-shape bg-gradient-red text-white rounded-circle shadow mb-4"> 
+                          <i className="ni ni-active-40" />
+                        </div>
+                        <h5 className="h3">Components</h5>
+                        <p>Argon comes with over 70 handcrafted components.</p> 
+                        
+                      </CardBody>
+                        */}
+                    </Card>
+                    <Card>
+                      <img
+                        src={
+                          require("../../assets/img/theme/online_learning2f.jpg")
+                            .default
+                        }
+                        className="img-fluid rounded"
+                        alt="homeimage"
+                      />
+                      {/* <CardBody> // rmal
+                        <div className="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-active-40" />
+                        </div>
+                        <h5 className="h3">Plugins</h5>
+                        <p>
+                          Fully integrated and extendable third-party plugins
+                          that you will love.
+                        </p>
+                      </CardBody> */}
+                    </Card>
+                  </Col>
+                  <Col className="pt-lg-5 pt-4" md="6">
+                    <Card className="mb-4">
+                      <img
+                        src={
+                          require("../../assets/img/theme/online_learning1f.jpg")
+                            .default
+                        }
+                        className="img-fluid rounded"
+                        alt="homeimage"
+                      />
+                      {/* <CardBody> // rmal
+                        <div className="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-active-40" />
+                        </div>
+                        <h5 className="h3">Pages</h5>
+                        <p>
+                          From simple to complex, you get a beautiful set of 15+
+                          page examples.
+                        </p>
+                      </CardBody> */}
+                    </Card>
+                    <Card className="mb-4">
+                      <img
+                        src={
+                          require("../../assets/img/theme/bg_img4f.jpg")
+                            .default
+                        }
+                        className="img-fluid rounded"
+                        alt="homeimage"
+                      />
+                      {/* <CardBody> // rmal
+                        <div className="icon icon-shape bg-gradient-warning text-white rounded-circle shadow mb-4">
+                          <i className="ni ni-active-40" />
+                        </div>
+                        <h5 className="h3">Documentation</h5>
+                        <p>You will love how easy is to to work with Argon.</p>
+                      </CardBody> */}
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+
+
+
+
+
+              {/* <Col lg="6">
                 <Row className="pt-5">
                   <Col md="6">
                     <Card>
@@ -112,7 +202,7 @@ function IndexHeader() {
                     </Card>
                   </Col>
                 </Row>
-              </Col>
+              </Col> */}
             </Row>
           </div>
         </Container>
