@@ -40,6 +40,7 @@ import Typography from "views/pages/components/Typography.js";
 import Validation from "views/pages/forms/Validation.js";
 import Vector from "views/pages/maps/Vector.js";
 import Widgets from "views/pages/Widgets.js";
+import Classroom from "views/pages/Classroom";
 
 const routes = [
   {
@@ -88,9 +89,11 @@ const routes = [
     icon: "ni ni-single-copy-04 text-ourgray", // Lilia - alteração de icon
   },
   {
-    path: "#", // Lilia - alteração de nome da path
+    path: "/classroom", // Lilia - alteração de nome da path // rmal adição de classroom versao beta
     name: "ClassRoom", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-door-open text-ourgray", // Lilia - alteração de icon
+    component: Classroom, // rmal linha adicionada
+    layout: "/admin", // rmal linha adicionada
   },
   {
     path: "#", // Lilia - alteração de nome da path

@@ -39,7 +39,6 @@ import {
 // core components
 import SimpleHeader from "components/Headers/SimpleHeader.js";
 
-
 // Lilia - alteração de nomes e "parent names"
 
 function Tables() {
@@ -50,15 +49,14 @@ function Tables() {
         <Row>
           <div className="col">
             <Card>
-              <CardHeader className="border-0">
-              </CardHeader>
+              <CardHeader className="border-0"></CardHeader>
 
               {/* Lilia - alteração de títulos, icones e informações, inserção de ficheiros PDF (escolher 1 tabela e esconder as outras) */}
 
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th className="sort" data-sort="name" scope="col">   
+                    <th className="sort" data-sort="name" scope="col">
                       File Name
                     </th>
                     <th className="sort" data-sort="budget" scope="col">
@@ -92,7 +90,7 @@ function Tables() {
                         </a> */}
                         <Media>
                           <span className="name mb-0 text-sm">
-                          Unit 1 - Cloud Structure And Features.pdf
+                            Unit 1 - Cloud Structure And Features.pdf
                           </span>
                         </Media>
                       </Media>
@@ -179,7 +177,6 @@ function Tables() {
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="completion mr-2">1.28 MB</span>
-                        
                       </div>
                     </td>
                     <td className="text-right">
@@ -197,7 +194,6 @@ function Tables() {
                             //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
                             //download
-
 
                             href="http://africau.edu/images/default/sample.pdf" // rmal
                             target="_blank"
@@ -237,7 +233,7 @@ function Tables() {
                         </a> */}
                         <Media>
                           <span className="name mb-0 text-sm">
-                          Unit 2 - AIM and Compute Labs.pdf
+                            Unit 2 - AIM and Compute Labs.pdf
                           </span>
                         </Media>
                       </Media>
@@ -324,7 +320,6 @@ function Tables() {
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="completion mr-2">3.59 MB</span>
-                        
                       </div>
                     </td>
                     <td className="text-right">
@@ -337,12 +332,11 @@ function Tables() {
                         >
                           <i className="fa fa-solid fa-eye" />
                         </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-arrow" right> 
+                        <DropdownMenu className="dropdown-menu-arrow" right>
                           <DropdownItem
                             //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
                             //download
-
 
                             href="http://africau.edu/images/default/sample.pdf" // rmal
                             target="_blank"
@@ -382,7 +376,7 @@ function Tables() {
                         </a> */}
                         <Media>
                           <span className="name mb-0 text-sm">
-                          Unit 3 - Storage.pdf
+                            Unit 3 - Storage.pdf
                           </span>
                         </Media>
                       </Media>
@@ -469,7 +463,6 @@ function Tables() {
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="completion mr-2">2.57 MB</span>
-                        
                       </div>
                     </td>
                     <td className="text-right">
@@ -487,7 +480,6 @@ function Tables() {
                             //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
                             //download
-
 
                             href="http://africau.edu/images/default/sample.pdf" // rmal
                             target="_blank"
@@ -527,7 +519,7 @@ function Tables() {
                         </a> */}
                         <Media>
                           <span className="name mb-0 text-sm">
-                          Unit 4 - DNS, ELB and AutoScaling.pdf
+                            Unit 4 - DNS, ELB and AutoScaling.pdf
                           </span>
                         </Media>
                       </Media>
@@ -614,7 +606,6 @@ function Tables() {
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="completion mr-2">2.26 MB</span>
-                        
                       </div>
                     </td>
                     <td className="text-right">
@@ -632,7 +623,6 @@ function Tables() {
                             //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
                             //download
-
 
                             href="http://africau.edu/images/default/sample.pdf" // rmal
                             target="_blank"
@@ -672,7 +662,7 @@ function Tables() {
                         </a> */}
                         <Media>
                           <span className="name mb-0 text-sm">
-                          Unit 5 - Apps Servless, VPCs.pdf
+                            Unit 5 - Apps Servless, VPCs.pdf
                           </span>
                         </Media>
                       </Media>
@@ -759,7 +749,6 @@ function Tables() {
                     <td>
                       <div className="d-flex align-items-center">
                         <span className="completion mr-2">1.74 MB</span>
-                        
                       </div>
                     </td>
                     <td className="text-right">
@@ -777,7 +766,6 @@ function Tables() {
                             //href="src/assets/files/Unit1_CloudStructureAndFeatures.pdf"  // Lilia
                             // onClick={(e) => e.preventDefault()}
                             //download
-
 
                             href="http://africau.edu/images/default/sample.pdf" // rmal
                             target="_blank"
