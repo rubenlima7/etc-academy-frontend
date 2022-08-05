@@ -40,6 +40,7 @@ import Typography from "views/pages/components/Typography.js";
 import Validation from "views/pages/forms/Validation.js";
 import Vector from "views/pages/maps/Vector.js";
 import Widgets from "views/pages/Widgets.js";
+import Classroom from "views/pages/Classroom";
 
 const routes = [
   {
@@ -71,11 +72,9 @@ const routes = [
      ], */
   },
   {
-    path: "/my-schedule", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "My Schedule", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-clock text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
     path: "/calendar",
@@ -85,25 +84,21 @@ const routes = [
     layout: "/admin",
   },
   {
-    path: "/my-courses", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "My Courses", // Lilia - alteração de nome do menu
     icon: "ni ni-single-copy-04 text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/classroom", // Lilia - alteração de nome da path
+    path: "/classroom", // Lilia - alteração de nome da path // rmal adição de classroom versao beta
     name: "ClassRoom", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-door-open text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
+    component: Classroom, // rmal linha adicionada
+    layout: "/admin", // rmal linha adicionada
   },
   {
-    path: "/recorded-lessons", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Recorded Lessons", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-file-video text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
     path: "/materials", // Lilia - alteração de nome da path
@@ -114,67 +109,49 @@ const routes = [
     state: "tablesCollapse",
   },
   {
-    path: "/group-work", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Group Work", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-layer-group text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/exams", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Exams", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-clipboard-list text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/assessments", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Assessments", // Lilia - alteração de nome do menu
     icon: "ni ni-books text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/video-courses", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Video Courses", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-laptop text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/progress", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Progress", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-chart-line text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/certifications", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Certifications", // Lilia - alteração de nome do menu
     icon: "ni ni-paper-diploma text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/forum", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Forum", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-comment-dots text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/inbox", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Inbox", // Lilia - alteração de nome do menu
     icon: "fa fa-regular fa-envelope-open text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   {
-    path: "/info", // Lilia - alteração de nome da path
+    path: "#", // Lilia - alteração de nome da path
     name: "Info", // Lilia - alteração de nome do menu
     icon: "fa fa-solid fa-info text-ourgray", // Lilia - alteração de icon
-    component: Widgets,
-    layout: "/admin",
   },
   /* Ignorar os seguintes menus 
   {
@@ -212,12 +189,13 @@ const routes = [
     icon: "ni ni-chart-pie-35 text-info",
     component: Charts,
     layout: "/admin",
-  },
+  },*/ // rmal
   {
     collapse: true,
-    name: "Menu Test",
-    icon: "fa fa-solid fa-clock text-gray", // Lilia - alteração de icon
-    state: "examplesCollapse",
+    name: "", // rmal tirei o texto "Examples"
+    icon: "", // Lilia - alteração de icon // rmal tirei o icon
+    state: "", // rmal tirei o "examplesCollapse"
+    invisible: "true",
     views: [
       {
         path: "/pricing",
@@ -246,7 +224,7 @@ const routes = [
         miniName: "L",
         component: Lock,
         layout: "/auth",
-      },
+      } /* // rmal
       {
         path: "/timeline",
         name: "Timeline",
@@ -267,9 +245,9 @@ const routes = [
         miniName: "RS",
         component: RTLSupport,
         layout: "/rtl",
-      },
+      },*/, // rmal
     ],
-  },
+  } /* // rmal
   {
     collapse: true,
     name: "Menu test 2", // Lilia - alteração de nome do menu
@@ -374,7 +352,7 @@ const routes = [
         layout: "/admin",
       },
     ],
-  }, */
+  }, */,
 ];
 
 export default routes;

@@ -20,7 +20,7 @@ import classnames from "classnames";
 // javascipt plugin for creating charts
 import { Chart } from "chart.js";
 // react plugin used to create charts
-import { Line, Bar,Doughnut, Pie } from "react-chartjs-2";
+import { Line, Bar, Doughnut, Pie } from "react-chartjs-2";
 // reactstrap components
 import {
   Badge,
@@ -101,13 +101,15 @@ function Dashboard() {
               {/* Lilia - Alteração do tipo de chart e troca de posição */}
 
                 <div className="chart">
-                  <Doughnut
+                <p className="p mb--5 my-2 text-xs">Absent: 20% <br></br> Present: 80%</p>
+                  <Doughnut 
                     data={chartExample5.data}
                     options={chartExample5.options}
                     className="chart-canvas"
                     id="chart-doughnut"
-                  />
+                  /> 
                 </div>
+                
               </CardBody>
             </Card>
           </Col>
@@ -124,7 +126,7 @@ function Dashboard() {
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
-                      <NavItem className="mr-2 mr-md-0">
+                      {/* <NavItem className="mr-2 mr-md-0">
                         <NavLink
                           className={classnames("py-2 px-3", {
                             active: activeNav === 1,
@@ -135,8 +137,8 @@ function Dashboard() {
                           <span className="d-none d-md-block">Month</span>
                           <span className="d-md-none">M</span>
                         </NavLink>
-                      </NavItem>
-                      <NavItem>
+                      </NavItem> */}
+                      {/* <NavItem>
                         <NavLink
                           className={classnames("py-2 px-3", {
                             active: activeNav === 2,
@@ -148,21 +150,21 @@ function Dashboard() {
                           <span className="d-none d-md-block">Week</span>
                           <span className="d-md-none">W</span>
                         </NavLink>
-                      </NavItem>
+                      </NavItem> */}
                     </Nav>
                   </div>
                 </Row>
               </CardHeader>
               <CardBody>
-                <div className="chart">
-                  <Line
-                    data={chartExample1[chartExample1Data]}
-                    options={chartExample1.options}
-                    id="chart-sales-dark"
-                    className="chart-canvas"
-                  />
-                </div>
-              </CardBody>
+             <div className="chart">
+               <Line
+                 data={chartExample2.data}
+                 options={chartExample2.options}
+                 id="chart-sales"
+                 className="chart-canvas"
+               />
+             </div>
+           </CardBody>
             </Card>
           </Col>
           
@@ -303,7 +305,7 @@ function Dashboard() {
               </CardBody>
             </Card>
           </Col>
-          <Col xl="4">
+          <Col xl="3">
             <Card>
 
             {/* Lilia - Alteração do titulo, nome dos cursos, horários e personalização do aspeto da tabela */}
@@ -2391,7 +2393,7 @@ function Dashboard() {
               </Table>
             </Card>
           </Col> */}
-
+          <Col xl="4">
               <Card>
 
               {/* Lilia - Alteração do titulo e textos, inserção de imagens e personalização da tabela */}
@@ -2440,7 +2442,24 @@ function Dashboard() {
                       </div>
                     </Row>
                   </ListGroupItem>
+                  <ListGroupItem className="px-3">
+                    <Row className="align-items-center">
+                      <Col className="col-auto">
+                        <a
+                          className="avatar avatar-xs rouded-circle"
+                        >
+                          <img
+                            alt="..."
+                            src={require("assets/days/9.png").default}
+                          />
+                        </a>
+                      </Col>
+                      <div className="col">
+                        <h5>Project Presentation</h5>
 
+                      </div>
+                    </Row>
+                  </ListGroupItem>
                   <ListGroupItem className="px-3">
                     <Row className="align-items-center">
                       <Col className="col-auto">
@@ -2481,7 +2500,7 @@ function Dashboard() {
                 </ListGroup>
               </CardBody>
             </Card>
-
+            </Col>
           
         </Row>
       </Container>

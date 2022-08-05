@@ -159,7 +159,7 @@ var fonts = {
 // Colors
 var colors = {
   gray: {
-    100: "#f6f9fc",
+    100: "#F2F2FF",
     200: "#e9ecef",
     300: "#dee2e6",
     400: "#ced4da",
@@ -170,13 +170,16 @@ var colors = {
     900: "#212529",
   },
   theme: {
-    default: "#172b4d",
+    default: "#39395E",
     primary: "#6768AB",
     secondary: "#f4f5f7",
     info: "#6768AB",
     success: "#2dce89",
     danger: "#f5365c",
     warning: "#fb6340",
+    pink: "#F2898E",
+    purple: "#6768AB",
+    darkpurple: "#39395E",
   },
   black: "#12263F",
   white: "#FFFFFF",
@@ -193,8 +196,8 @@ function chartOptions() {
       global: {
         responsive: true,
         maintainAspectRatio: false,
-        defaultColor: mode === "dark" ? colors.gray[700] : colors.gray[600],
-        defaultFontColor: mode === "dark" ? colors.gray[700] : colors.gray[600],
+        defaultColor: mode === "dark" ? colors.gray[700] : colors.gray[100],
+        defaultFontColor: mode === "dark" ? colors.gray[700] : colors.gray[100],
         defaultFontFamily: fonts.base,
         defaultFontSize: 13,
         layout: {
@@ -309,7 +312,7 @@ function parseOptions(parent, options) {
     }
   }
 }
-
+// LILIA - CHART ATTENDANCE
 // Example 1 of Chart inside src/views/dashboards/Dashboard.js
 let chartExample1 = {
   options: {
@@ -317,13 +320,13 @@ let chartExample1 = {
       yAxes: [
         {
           gridLines: {
-            color: colors.gray[700],
-            zeroLineColor: colors.gray[700],
+            color: colors.gray[100],
+            zeroLineColor: colors.gray[100],
           },
           ticks: {
             callback: function (value) {
               if (!(value % 10)) {
-                return "$" + value + "k";
+                return "" + value + "H";
               }
             },
           },
@@ -341,7 +344,7 @@ let chartExample1 = {
             content += label;
           }
 
-          content += "$" + yLabel + "k";
+          content += "" + yLabel + "H";
           return content;
         },
       },
@@ -349,28 +352,30 @@ let chartExample1 = {
   },
   data1: (canvas) => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["Aug 1", "Aug 2", "Aug 3", "Aug 4", "Aug 5", "Aug 6", "Aug 7"],
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+          data: [0, 1, 2, 3, 4, 5, 6],
         },
       ],
     };
   },
   data2: (canvas) => {
     return {
-      labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      labels: ["Aug 1", "Aug 2", "Aug 3", "Aug 4", "Aug 5", "Aug 6", "Aug 7"],
       datasets: [
         {
           label: "Performance",
-          data: [0, 20, 5, 25, 10, 30, 15, 40, 40],
+          data: [0, 1, 2, 3, 4, 5, 6],
         },
       ],
     };
   },
 };
 
+
+// LILIA - CHART PROGRESS
 // Example 2 of Chart inside src/views/dashboards/Dashboard.js and src/views/dashboards/Alternative.js and src/views/pages/Charts.js
 let chartExample2 = {
   options: {
@@ -378,13 +383,13 @@ let chartExample2 = {
       yAxes: [
         {
           gridLines: {
-            color: colors.gray[200],
-            zeroLineColor: colors.gray[200],
+            color: colors.gray[100],
+            zeroLineColor: colors.gray[100],
           },
           ticks: {
             callback: function (value) {
-              if (!(value % 10)) {
-                //return '$' + value + 'k'
+              if (!(value % 2)) {
+                return '' + value + 'H'
                 return value;
               }
             },
@@ -395,9 +400,9 @@ let chartExample2 = {
     tooltips: {
       callbacks: {
         label: function (item, data) {
-          var label = data.datasets[item.datasetIndex].label || "";
+          var label = data.datasets[item.datasetIndex].label || " ";
           var yLabel = item.yLabel;
-          var content = "";
+          var content = "Hours attended: ";
           if (data.datasets.length > 1) {
             content += label;
           }
@@ -408,16 +413,18 @@ let chartExample2 = {
     },
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Aug 1", "Aug 2", "Aug 3", "Aug 4", "Aug 5", "Aug 6", "Aug 7"],
     datasets: [
       {
         label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
+        data: [0, 2, 4, 2, 6, 4, 8, 10],
         maxBarThickness: 10,
+        
       },
     ],
   },
 };
+
 
 // Example 3 of Chart inside src/views/dashboards/Alternative.js and src/views/pages/Charts.js
 let chartExample3 = {
@@ -426,8 +433,8 @@ let chartExample3 = {
       yAxes: [
         {
           gridLines: {
-            color: colors.gray[200],
-            zeroLineColor: colors.gray[200],
+            color: colors.gray[100],
+            zeroLineColor: colors.gray[100],
           },
           ticks: {},
         },
@@ -435,11 +442,11 @@ let chartExample3 = {
     },
   },
   data: {
-    labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Aug 1", "Aug 2", "Aug 3", "Aug 4", "Aug 5", "Aug 6", "Aug 7"],
     datasets: [
       {
         label: "Performance",
-        data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+        data: [0, 2, 4, 2, 6, 4, 8, 10],
       },
     ],
   },
@@ -477,22 +484,16 @@ const chartExample4 = {
 // Example 5 of Chart inside src/views/pages/Charts.js
 const chartExample5 = {
   data: {
-    labels: ["Danger", "Warning", "Success", "Primary", "Info"],
+    labels: ["Absent", "Present"],
     datasets: [
       {
         data: [
-          randomScalingFactor(),
-          randomScalingFactor(),
-          randomScalingFactor(),
-          randomScalingFactor(),
-          randomScalingFactor(),
+          20,
+          80,
         ],
         backgroundColor: [
-          colors.theme["danger"],
-          colors.theme["warning"],
-          colors.theme["success"],
-          colors.theme["primary"],
-          colors.theme["info"],
+          colors.theme["purple"],
+          colors.theme["darkpurple"],
         ],
         label: "Dataset 1",
       },

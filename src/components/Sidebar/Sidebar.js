@@ -98,6 +98,9 @@ function Sidebar({ toggleSidenav, sidenavOpen, routes, logo, rtlActive }) {
       if (prop.redirect) {
         return null;
       }
+      if(prop.invisible) {
+        return null;
+      }
       if (prop.collapse) {
         var st = {};
         st[prop["state"]] = !state[prop.state];

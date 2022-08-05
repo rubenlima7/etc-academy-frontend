@@ -56,7 +56,7 @@ let mapData = {
   BR: 550,
   CA: 120,
   DE: 1300,
-  FR: 540,
+  FR: 540, 
   GB: 690,
   GE: 200,
   IN: 200,
@@ -85,10 +85,10 @@ function Widgets() {
 
   return (
     <>
-      <CardsHeader name="Widgets" parentName="Widgets" />
+      <CardsHeader name="Soon" parentName="Soon" />
       <Container className="mt--6" fluid>
         <Row>
-          <Col lg="4">
+          {/* <Col lg="4">
             <Card>
               <CardImg
                 alt="..."
@@ -474,7 +474,7 @@ function Widgets() {
                 </div>
               </CardBody>
             </Card>
-          </Col>
+          </Col> */}
           <Col lg="4">
             <Card className="widget-calendar">
               <CardHeader>
@@ -735,7 +735,7 @@ function Widgets() {
             </Card>
           </Col>
           <Col lg="4">
-            <Card className="widget-calendar">
+            {/* <Card className="widget-calendar">
               <CardHeader>
                 <Row className="align-items-center">
                   <Col xs="8">
@@ -913,8 +913,8 @@ function Widgets() {
                   </ListGroupItem>
                 </ListGroup>
               </CardBody>
-            </Card>
-            <Card className="bg-gradient-primary">
+            </Card> */}
+            {/* <Card className="bg-gradient-primary">
               <CardBody>
                 <Row className="justify-content-between align-items-center">
                   <div className="col">
@@ -949,8 +949,8 @@ function Widgets() {
                   </div>
                 </Row>
               </CardBody>
-            </Card>
-            <Card className="bg-gradient-default">
+            </Card> */}
+            {/* <Card className="bg-gradient-default">
               <CardBody>
                 <Row>
                   <div className="col">
@@ -977,8 +977,8 @@ function Widgets() {
                   </span>
                 </p>
               </CardBody>
-            </Card>
-            <Card className="bg-gradient-primary">
+            </Card> */}
+            {/* <Card className="bg-gradient-primary">
               <CardBody>
                 <Row>
                   <div className="col">
@@ -1005,8 +1005,8 @@ function Widgets() {
                   </span>
                 </p>
               </CardBody>
-            </Card>
-            <Card className="bg-gradient-danger">
+            </Card> */}
+            {/* <Card className="bg-gradient-danger">
               <CardBody>
                 <Row>
                   <div className="col">
@@ -1033,8 +1033,8 @@ function Widgets() {
                   </span>
                 </p>
               </CardBody>
-            </Card>
-            <Card>
+            </Card> */}
+            {/* <Card>
               <CardHeader>
                 <h5 className="h3 mb-0">To do list</h5>
               </CardHeader>
@@ -1156,7 +1156,7 @@ function Widgets() {
                   </ListGroupItem>
                 </ListGroup>
               </CardBody>
-            </Card>
+            </Card> */}
           </Col>
         </Row>
       </Container>

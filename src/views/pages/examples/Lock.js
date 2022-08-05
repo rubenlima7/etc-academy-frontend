@@ -50,14 +50,14 @@ function Lock() {
                     <img
                       alt="..."
                       className="rounded-circle border-secondary"
-                      src={require("assets/img/theme/team-4.jpg").default}
+                      src={require("assets/img/theme/Lilia.jpg").default}
                     />
                   </div>
                 </Col>
               </Row>
               <CardBody className="pt-7 px-5">
                 <div className="text-center mb-4">
-                  <h3>Jessica Jones</h3>
+                  <h3>Lília Lopes</h3>
                 </div>
                 <Form role="form">
                   <FormGroup

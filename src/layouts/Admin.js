@@ -85,7 +85,7 @@ function Admin() {
         logo={{
           innerLink: "/",
           imgSrc: require("assets/img/brand/logo_ETC.png").default,  // Lilia - ateração de logo
-          imgAlt: "...",
+          imgAlt: "ETC Academy",
         }}
       />
       <div className="main-content" ref={mainContentRef}>
